@@ -25,6 +25,14 @@
         ],
     },
 
+    
+    'images': [
+        'static/description/cover.png',
+        'static/description/sc1.png',
+        'static/description/sc2.png',
+        'static/description/sc3.png',
+    ],
+    
     'price': 19.99,
     'currency': 'EUR',
 
