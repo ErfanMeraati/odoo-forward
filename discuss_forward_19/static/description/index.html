@@ -1,317 +1,213 @@
-<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #2b2b3d; background-color: #ffffff; line-height: 1.6; -webkit-font-smoothing: antialiased;">
+<div class="dmf-wrap">
+<style>
+.dmf-wrap, .dmf-wrap * { box-sizing: border-box; }
+.dmf-wrap {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2b2b3d;
+  background: #ffffff;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.dmf-section { padding: 56px 20px; max-width: 1100px; margin: 0 auto; }
+.dmf-section-tinted { background: #f6f7fb; }
+.dmf-section-tinted > .dmf-section { padding-top: 56px; padding-bottom: 56px; }
+.dmf-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #7a4fe0; margin-bottom: 10px; text-align: center; }
+.dmf-h2 { font-size: 28px; font-weight: 800; color: #1c1c3a; margin: 0 0 12px 0; text-align: center; }
+.dmf-sub { font-size: 15px; color: #6b6b85; text-align: center; max-width: 600px; margin: 0 auto 40px auto; }
+.dmf-img { max-width: 100%; height: auto; display: block; border-radius: 12px; background: #eef0f7; }
+.dmf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+.dmf-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.dmf-card { background: #ffffff; border: 1px solid #e9e9f2; border-radius: 14px; padding: 22px; box-shadow: 0 3px 10px rgba(40,40,90,0.04); }
+.dmf-card h3 { font-size: 16px; font-weight: 700; color: #1c1c3a; margin: 0 0 8px 0; }
+.dmf-card p { font-size: 13.5px; color: #6b6b85; margin: 0; }
+.dmf-badge { display: inline-block; background: #ffffff; border: 1px solid #e2e2ef; color: #35355a; padding: 7px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; margin: 4px; }
+.dmf-step-num { font-size: 26px; font-weight: 800; color: #cfc7f5; margin-bottom: 8px; }
+</style>
 
-  <!-- ================= HERO SECTION ================= -->
-  <div style="width: 100%; background: linear-gradient(135deg, #f4f6fb 0%, #eef1fb 55%, #f7f4fd 100%); padding: 72px 24px 64px 24px; border-bottom: 1px solid #e8e8f2;">
-    <div style="max-width: 1140px; margin: 0 auto; text-align: center;">
+<!-- HERO -->
+<div class="dmf-section" style="text-align:center;">
+  <div class="dmf-eyebrow">DISCUSS &nbsp;•&nbsp; COMMUNICATION UTILITY</div>
+  <h1 style="font-size:38px; font-weight:800; margin:0 0 14px 0; color:#1c1c3a;">Discuss Message Forward</h1>
+  <p style="font-size:17px; font-weight:500; color:#4a4a63; max-width:640px; margin:0 auto 12px auto;">
+    Forward messages between Discuss conversations in one click — no copy, no paste, no lost context.
+  </p>
+  <p style="font-size:14.5px; color:#6b6b85; max-width:600px; margin:0 auto 28px auto;">
+    A lightweight extension for Odoo Discuss that lets your team select any message and instantly forward it to another channel or direct conversation.
+  </p>
+  <div style="margin-bottom:32px;">
+    <span class="dmf-badge">Odoo 18 Compatible</span>
+    <span class="dmf-badge">Odoo 19 Compatible</span>
+    <span class="dmf-badge">Native Discuss Integration</span>
+  </div>
+  <img src="./cover.png" alt="Discuss Message Forward - forwarding a message between conversations" class="dmf-img" style="border:1px solid #edeef7;" />
+</div>
 
-      <div style="display: inline-block; padding: 6px 16px; border-radius: 999px; background: rgba(113, 75, 226, 0.08); border: 1px solid rgba(113, 75, 226, 0.18); color: #6c4bd6; font-size: 13px; font-weight: 600; letter-spacing: 0.4px; margin-bottom: 24px;">
-        DISCUSS &nbsp;•&nbsp; COMMUNICATION UTILITY
-      </div>
-
-      <h1 style="font-size: 48px; font-weight: 800; margin: 0 0 18px 0; color: #1c1c3a; letter-spacing: -1px; line-height: 1.15;">
-        Discuss Message Forward
-      </h1>
-
-      <p style="font-size: 20px; font-weight: 500; color: #4a4a63; max-width: 720px; margin: 0 auto 16px auto;">
-        Forward messages between Discuss conversations in a single click — no copy, no paste, no lost context.
-      </p>
-
-      <p style="font-size: 16px; color: #6b6b85; max-width: 640px; margin: 0 auto 40px auto;">
-        A lightweight, native extension for Odoo Discuss that lets your team select any message and instantly
-        forward it to another channel or direct conversation, keeping information flowing without friction.
-      </p>
-
-      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 56px;">
-        <span style="background: #ffffff; border: 1px solid #e2e2ef; color: #35355a; padding: 9px 18px; border-radius: 10px; font-size: 14px; font-weight: 600; box-shadow: 0 2px 6px rgba(30,30,60,0.04);">Odoo 18 Compatible</span>
-        <span style="background: #ffffff; border: 1px solid #e2e2ef; color: #35355a; padding: 9px 18px; border-radius: 10px; font-size: 14px; font-weight: 600; box-shadow: 0 2px 6px rgba(30,30,60,0.04);">Odoo 19 Compatible</span>
-        <span style="background: #ffffff; border: 1px solid #e2e2ef; color: #35355a; padding: 9px 18px; border-radius: 10px; font-size: 14px; font-weight: 600; box-shadow: 0 2px 6px rgba(30,30,60,0.04);">Native Discuss Integration</span>
-      </div>
-
-      <!-- Hero Visual -->
-      <div style="max-width: 980px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 60px rgba(40,40,90,0.14), 0 4px 14px rgba(40,40,90,0.08); border: 1px solid #eceef8;">
-        <img src="./cover.png" alt="Discuss Message Forward - forwarding a message between conversations" style="width: 100%; display: block; background: #f4f5fa;" />
-      </div>
-
+<!-- KEY FEATURES -->
+<div class="dmf-section">
+  <div class="dmf-eyebrow">KEY FEATURES</div>
+  <div class="dmf-h2">Everything you need to move messages faster</div>
+  <div class="dmf-sub">A focused feature set designed to remove friction from everyday Discuss conversations.</div>
+  <div class="dmf-grid">
+    <div class="dmf-card">
+      <h3>Forward Messages Easily</h3>
+      <p>Select any message in Discuss and forward it with a simple, intuitive action.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Select Destination Conversation</h3>
+      <p>Choose exactly which channel or direct conversation should receive the message.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Fast and Simple Workflow</h3>
+      <p>Forward a message in just a few clicks without interrupting your work.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Native Discuss Experience</h3>
+      <p>Built directly into the Discuss interface for a seamless feel.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Fewer Copy/Paste Steps</h3>
+      <p>Reduce manual copying between conversations and avoid losing context.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Better Team Communication</h3>
+      <p>Help information reach the right people in the right conversation.</p>
     </div>
   </div>
+</div>
 
-  <!-- ================= KEY FEATURES ================= -->
-  <div style="max-width: 1140px; margin: 0 auto; padding: 88px 24px 72px 24px;">
-    <div style="text-align: center; margin-bottom: 56px;">
-      <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">KEY FEATURES</div>
-      <h2 style="font-size: 34px; font-weight: 800; color: #1c1c3a; margin: 0 0 12px 0; letter-spacing: -0.5px;">Everything you need to move messages faster</h2>
-      <p style="font-size: 16px; color: #6b6b85; max-width: 600px; margin: 0 auto;">A focused feature set designed to remove friction from everyday Discuss conversations.</p>
-    </div>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
-
-      <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 32px 28px; box-shadow: 0 6px 20px rgba(40,40,90,0.05);">
-        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #6c4bd6, #4f7cf0); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <span style="color: #ffffff; font-size: 22px;">&#8594;</span>
-        </div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Forward Messages Easily</h3>
-        <p style="font-size: 14.5px; color: #6b6b85; margin: 0;">Select any message in Discuss and forward it with a simple, intuitive action — no manual retyping required.</p>
+<!-- HOW IT WORKS -->
+<div class="dmf-section-tinted">
+  <div class="dmf-section">
+    <div class="dmf-eyebrow">HOW IT WORKS</div>
+    <div class="dmf-h2" style="margin-bottom:36px;">Three steps. That's it.</div>
+    <div class="dmf-grid-3">
+      <div class="dmf-card" style="text-align:center;">
+        <div class="dmf-step-num">01</div>
+        <h3>Select Message</h3>
+        <p>Pick the message you want to share from any conversation.</p>
       </div>
-
-      <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 32px 28px; box-shadow: 0 6px 20px rgba(40,40,90,0.05);">
-        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #4f7cf0, #6c4bd6); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <span style="color: #ffffff; font-size: 20px;">&#9776;</span>
-        </div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Select Destination Conversation</h3>
-        <p style="font-size: 14.5px; color: #6b6b85; margin: 0;">Choose exactly which channel or direct conversation should receive the forwarded message.</p>
+      <div class="dmf-card" style="text-align:center;">
+        <div class="dmf-step-num">02</div>
+        <h3>Choose Conversation</h3>
+        <p>Select the channel or direct message to forward it to.</p>
       </div>
-
-      <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 32px 28px; box-shadow: 0 6px 20px rgba(40,40,90,0.05);">
-        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #6c4bd6, #4f7cf0); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <span style="color: #ffffff; font-size: 20px;">&#9889;</span>
-        </div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Fast and Simple Workflow</h3>
-        <p style="font-size: 14.5px; color: #6b6b85; margin: 0;">Forward a message in just a few clicks, keeping conversations moving without interrupting your work.</p>
-      </div>
-
-      <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 32px 28px; box-shadow: 0 6px 20px rgba(40,40,90,0.05);">
-        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #4f7cf0, #6c4bd6); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <span style="color: #ffffff; font-size: 20px;">&#128172;</span>
-        </div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Native Discuss Experience</h3>
-        <p style="font-size: 14.5px; color: #6b6b85; margin: 0;">Built directly into the Discuss interface, so forwarding feels like a natural part of the app.</p>
-      </div>
-
-      <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 32px 28px; box-shadow: 0 6px 20px rgba(40,40,90,0.05);">
-        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #6c4bd6, #4f7cf0); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <span style="color: #ffffff; font-size: 20px;">&#128203;</span>
-        </div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Fewer Copy/Paste Steps</h3>
-        <p style="font-size: 14.5px; color: #6b6b85; margin: 0;">Eliminate manual copying between conversations and reduce the risk of losing message context.</p>
-      </div>
-
-      <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 32px 28px; box-shadow: 0 6px 20px rgba(40,40,90,0.05);">
-        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, #4f7cf0, #6c4bd6); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <span style="color: #ffffff; font-size: 20px;">&#128101;</span>
-        </div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Better Team Communication</h3>
-        <p style="font-size: 14.5px; color: #6b6b85; margin: 0;">Help information reach the right people, in the right conversation, at the right time.</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ================= HOW IT WORKS ================= -->
-  <div style="width: 100%; background: linear-gradient(180deg, #f8f9fd 0%, #f3f4fb 100%); padding: 88px 24px; border-top: 1px solid #edeef7; border-bottom: 1px solid #edeef7;">
-    <div style="max-width: 1000px; margin: 0 auto;">
-
-      <div style="text-align: center; margin-bottom: 64px;">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">HOW IT WORKS</div>
-        <h2 style="font-size: 34px; font-weight: 800; color: #1c1c3a; margin: 0; letter-spacing: -0.5px;">Three steps. That's it.</h2>
-      </div>
-
-      <div style="display: flex; align-items: stretch; justify-content: center; gap: 0; flex-wrap: wrap;">
-
-        <div style="flex: 1 1 240px; max-width: 280px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 36px 26px; text-align: center; box-shadow: 0 8px 24px rgba(40,40,90,0.06); margin: 10px;">
-          <div style="font-size: 34px; font-weight: 800; color: #d8d3f7; margin-bottom: 14px;">01</div>
-          <h3 style="font-size: 17px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Select Message</h3>
-          <p style="font-size: 14px; color: #6b6b85; margin: 0;">Pick the message you want to share from any Discuss conversation.</p>
-        </div>
-
-        <div style="display: flex; align-items: center; justify-content: center; padding: 0 4px; color: #b7b0e8; font-size: 26px; font-weight: 700;">
-          &#8594;
-        </div>
-
-        <div style="flex: 1 1 240px; max-width: 280px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 36px 26px; text-align: center; box-shadow: 0 8px 24px rgba(40,40,90,0.06); margin: 10px;">
-          <div style="font-size: 34px; font-weight: 800; color: #d8d3f7; margin-bottom: 14px;">02</div>
-          <h3 style="font-size: 17px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Choose Conversation</h3>
-          <p style="font-size: 14px; color: #6b6b85; margin: 0;">Select the channel or direct message you want to forward it to.</p>
-        </div>
-
-        <div style="display: flex; align-items: center; justify-content: center; padding: 0 4px; color: #b7b0e8; font-size: 26px; font-weight: 700;">
-          &#8594;
-        </div>
-
-        <div style="flex: 1 1 240px; max-width: 280px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 36px 26px; text-align: center; box-shadow: 0 8px 24px rgba(40,40,90,0.06); margin: 10px;">
-          <div style="font-size: 34px; font-weight: 800; color: #d8d3f7; margin-bottom: 14px;">03</div>
-          <h3 style="font-size: 17px; font-weight: 700; color: #1c1c3a; margin: 0 0 10px 0;">Forward Message</h3>
-          <p style="font-size: 14px; color: #6b6b85; margin: 0;">Confirm and the message instantly appears in the destination conversation.</p>
-        </div>
-
+      <div class="dmf-card" style="text-align:center;">
+        <div class="dmf-step-num">03</div>
+        <h3>Forward Message</h3>
+        <p>Confirm and it instantly appears in the destination.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- ================= MAIN BENEFITS ================= -->
-  <div style="max-width: 1140px; margin: 0 auto; padding: 88px 24px;">
-    <div style="text-align: center; margin-bottom: 56px;">
-      <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">MAIN BENEFITS</div>
-      <h2 style="font-size: 34px; font-weight: 800; color: #1c1c3a; margin: 0 0 12px 0; letter-spacing: -0.5px;">Why teams use Discuss Message Forward</h2>
+<!-- MAIN BENEFITS -->
+<div class="dmf-section">
+  <div class="dmf-eyebrow">MAIN BENEFITS</div>
+  <div class="dmf-h2" style="margin-bottom:36px;">Why teams use Discuss Message Forward</div>
+  <div class="dmf-grid">
+    <div class="dmf-card">
+      <h3>Save Time</h3>
+      <p>Forward messages in seconds instead of retyping or copying content.</p>
     </div>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-
-      <div style="flex: 1 1 260px; display: flex; gap: 16px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 26px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-        <div style="min-width: 38px; height: 38px; border-radius: 10px; background: rgba(108,75,214,0.1); color: #6c4bd6; display: flex; align-items: center; justify-content: center; font-weight: 700;">&#9203;</div>
-        <div>
-          <h4 style="margin: 0 0 6px 0; font-size: 15.5px; font-weight: 700; color: #1c1c3a;">Save Time</h4>
-          <p style="margin: 0; font-size: 14px; color: #6b6b85;">Forward messages in seconds instead of retyping or manually copying content.</p>
-        </div>
-      </div>
-
-      <div style="flex: 1 1 260px; display: flex; gap: 16px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 26px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-        <div style="min-width: 38px; height: 38px; border-radius: 10px; background: rgba(79,124,240,0.1); color: #4f7cf0; display: flex; align-items: center; justify-content: center; font-weight: 700;">&#128260;</div>
-        <div>
-          <h4 style="margin: 0 0 6px 0; font-size: 15.5px; font-weight: 700; color: #1c1c3a;">Reduce Repetitive Actions</h4>
-          <p style="margin: 0; font-size: 14px; color: #6b6b85;">Cut down on repetitive manual steps involved in relaying information.</p>
-        </div>
-      </div>
-
-      <div style="flex: 1 1 260px; display: flex; gap: 16px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 26px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-        <div style="min-width: 38px; height: 38px; border-radius: 10px; background: rgba(108,75,214,0.1); color: #6c4bd6; display: flex; align-items: center; justify-content: center; font-weight: 700;">&#128101;</div>
-        <div>
-          <h4 style="margin: 0 0 6px 0; font-size: 15.5px; font-weight: 700; color: #1c1c3a;">Share Information Faster</h4>
-          <p style="margin: 0; font-size: 14px; color: #6b6b85;">Quickly move customer or project information to the people who need it.</p>
-        </div>
-      </div>
-
-      <div style="flex: 1 1 260px; display: flex; gap: 16px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 26px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-        <div style="min-width: 38px; height: 38px; border-radius: 10px; background: rgba(79,124,240,0.1); color: #4f7cf0; display: flex; align-items: center; justify-content: center; font-weight: 700;">&#128737;</div>
-        <div>
-          <h4 style="margin: 0 0 6px 0; font-size: 15.5px; font-weight: 700; color: #1c1c3a;">Improve Team Communication</h4>
-          <p style="margin: 0; font-size: 14px; color: #6b6b85;">Keep departments aligned by making it easy to relay relevant messages.</p>
-        </div>
-      </div>
-
-      <div style="flex: 1 1 260px; display: flex; gap: 16px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 26px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-        <div style="min-width: 38px; height: 38px; border-radius: 10px; background: rgba(108,75,214,0.1); color: #6c4bd6; display: flex; align-items: center; justify-content: center; font-weight: 700;">&#128172;</div>
-        <div>
-          <h4 style="margin: 0 0 6px 0; font-size: 15.5px; font-weight: 700; color: #1c1c3a;">Keep Information Moving</h4>
-          <p style="margin: 0; font-size: 14px; color: #6b6b85;">Ensure important messages don't stay stuck in a single conversation.</p>
-        </div>
-      </div>
-
+    <div class="dmf-card">
+      <h3>Reduce Repetitive Actions</h3>
+      <p>Cut down on repetitive manual steps involved in relaying information.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Share Information Faster</h3>
+      <p>Quickly move customer or project information to the people who need it.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Improve Team Communication</h3>
+      <p>Keep departments aligned by making it easy to relay messages.</p>
+    </div>
+    <div class="dmf-card">
+      <h3>Keep Information Moving</h3>
+      <p>Ensure important messages don't stay stuck in a single conversation.</p>
     </div>
   </div>
+</div>
 
-  <!-- ================= USE CASES ================= -->
-  <div style="width: 100%; background: linear-gradient(180deg, #f8f9fd 0%, #f3f4fb 100%); padding: 88px 24px; border-top: 1px solid #edeef7; border-bottom: 1px solid #edeef7;">
-    <div style="max-width: 1140px; margin: 0 auto;">
-
-      <div style="text-align: center; margin-bottom: 56px;">
-        <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">USE CASES</div>
-        <h2 style="font-size: 34px; font-weight: 800; color: #1c1c3a; margin: 0 0 12px 0; letter-spacing: -0.5px;">Built for how real teams work</h2>
+<!-- USE CASES -->
+<div class="dmf-section-tinted">
+  <div class="dmf-section">
+    <div class="dmf-eyebrow">USE CASES</div>
+    <div class="dmf-h2" style="margin-bottom:36px;">Built for how real teams work</div>
+    <div class="dmf-grid">
+      <div class="dmf-card">
+        <h3>Customer Support</h3>
+        <p>Forward a customer's message to a specialist team without losing context.</p>
       </div>
-
-      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-
-        <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 28px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-          <div style="font-size: 13px; font-weight: 700; color: #6c4bd6; margin-bottom: 8px;">CUSTOMER SUPPORT</div>
-          <p style="margin: 0; font-size: 14.5px; color: #4a4a63;">Forward a customer's message to a specialist team without losing the original wording or context.</p>
-        </div>
-
-        <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 28px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-          <div style="font-size: 13px; font-weight: 700; color: #4f7cf0; margin-bottom: 8px;">SALES TEAMS</div>
-          <p style="margin: 0; font-size: 14.5px; color: #4a4a63;">Relay a lead's request or a client update from one conversation to the responsible account manager.</p>
-        </div>
-
-        <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 28px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-          <div style="font-size: 13px; font-weight: 700; color: #6c4bd6; margin-bottom: 8px;">INTERNAL COMMUNICATION</div>
-          <p style="margin: 0; font-size: 14.5px; color: #4a4a63;">Share announcements or important notes across departments without retyping them.</p>
-        </div>
-
-        <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 28px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-          <div style="font-size: 13px; font-weight: 700; color: #4f7cf0; margin-bottom: 8px;">PROJECT TEAMS</div>
-          <p style="margin: 0; font-size: 14.5px; color: #4a4a63;">Move a decision or update from one project channel into another related conversation.</p>
-        </div>
-
-        <div style="flex: 1 1 300px; max-width: 340px; background: #ffffff; border: 1px solid #edeef7; border-radius: 16px; padding: 28px; box-shadow: 0 4px 14px rgba(40,40,90,0.04);">
-          <div style="font-size: 13px; font-weight: 700; color: #6c4bd6; margin-bottom: 8px;">MANAGEMENT COMMUNICATION</div>
-          <p style="margin: 0; font-size: 14.5px; color: #4a4a63;">Escalate or forward key messages to management without disrupting the original conversation.</p>
-        </div>
-
+      <div class="dmf-card">
+        <h3>Sales Teams</h3>
+        <p>Relay a lead's request or client update to the responsible account manager.</p>
+      </div>
+      <div class="dmf-card">
+        <h3>Internal Communication</h3>
+        <p>Share announcements or important notes across departments.</p>
+      </div>
+      <div class="dmf-card">
+        <h3>Project Teams</h3>
+        <p>Move a decision or update from one project channel into another.</p>
+      </div>
+      <div class="dmf-card">
+        <h3>Management Communication</h3>
+        <p>Escalate key messages to management without disrupting the conversation.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- ================= PRODUCT VISUAL / SCREENSHOTS ================= -->
-  <div style="max-width: 1140px; margin: 0 auto; padding: 88px 24px;">
-    <div style="text-align: center; margin-bottom: 56px;">
-      <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">PRODUCT VISUAL</div>
-      <h2 style="font-size: 34px; font-weight: 800; color: #1c1c3a; margin: 0 0 12px 0; letter-spacing: -0.5px;">See it inside Discuss</h2>
-      <p style="font-size: 16px; color: #6b6b85; max-width: 600px; margin: 0 auto;">A closer look at the message forwarding experience.</p>
+<!-- PRODUCT VISUAL -->
+<div class="dmf-section">
+  <div class="dmf-eyebrow">PRODUCT VISUAL</div>
+  <div class="dmf-h2">See it inside Discuss</div>
+  <div class="dmf-sub">A closer look at the message forwarding experience.</div>
+  <div class="dmf-grid-3">
+    <div class="dmf-card" style="padding:0; overflow:hidden;">
+      <img src="./sc1.png" alt="Selecting a message to forward in Discuss" class="dmf-img" />
+      <p style="padding:14px 16px; font-weight:600; color:#35355a; font-size:13.5px;">Selecting a message in Discuss</p>
     </div>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
-
-      <div style="flex: 1 1 300px; max-width: 360px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 28px rgba(40,40,90,0.07);">
-        <img src="./sc1.png" alt="Selecting a message to forward in Discuss" style="width: 100%; display: block; background: #f4f5fa;" />
-        <div style="padding: 18px 20px;">
-          <p style="margin: 0; font-size: 14px; font-weight: 600; color: #35355a;">Selecting a message in Discuss</p>
-        </div>
-      </div>
-
-      <div style="flex: 1 1 300px; max-width: 360px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 28px rgba(40,40,90,0.07);">
-        <img src="./sc2.png" alt="Choosing the destination conversation" style="width: 100%; display: block; background: #f4f5fa;" />
-        <div style="padding: 18px 20px;">
-          <p style="margin: 0; font-size: 14px; font-weight: 600; color: #35355a;">Choosing the destination conversation</p>
-        </div>
-      </div>
-
-      <div style="flex: 1 1 300px; max-width: 360px; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 28px rgba(40,40,90,0.07);">
-        <img src="./sc3.png" alt="Message forwarded successfully" style="width: 100%; display: block; background: #f4f5fa;" />
-        <div style="padding: 18px 20px;">
-          <p style="margin: 0; font-size: 14px; font-weight: 600; color: #35355a;">Message forwarded successfully</p>
-        </div>
-      </div>
-
+    <div class="dmf-card" style="padding:0; overflow:hidden;">
+      <img src="./sc2.png" alt="Choosing the destination conversation" class="dmf-img" />
+      <p style="padding:14px 16px; font-weight:600; color:#35355a; font-size:13.5px;">Choosing the destination conversation</p>
+    </div>
+    <div class="dmf-card" style="padding:0; overflow:hidden;">
+      <img src="./sc3.png" alt="Message forwarded successfully" class="dmf-img" />
+      <p style="padding:14px 16px; font-weight:600; color:#35355a; font-size:13.5px;">Message forwarded successfully</p>
     </div>
   </div>
+</div>
 
-  <!-- ================= COMPATIBILITY ================= -->
-  <div style="width: 100%; background: linear-gradient(135deg, #f4f6fb 0%, #eef1fb 100%); padding: 80px 24px; border-top: 1px solid #edeef7; border-bottom: 1px solid #edeef7;">
-    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-      <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">COMPATIBILITY</div>
-      <h2 style="font-size: 30px; font-weight: 800; color: #1c1c3a; margin: 0 0 32px 0; letter-spacing: -0.5px;">Works with your Odoo version</h2>
-
-      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-        <div style="background: #ffffff; border: 1px solid #e2e2ef; border-radius: 16px; padding: 26px 42px; box-shadow: 0 6px 18px rgba(40,40,90,0.06);">
-          <div style="font-size: 22px; font-weight: 800; color: #6c4bd6;">Odoo 18</div>
-          <div style="font-size: 13px; color: #6b6b85; margin-top: 4px;">discuss_forward</div>
-        </div>
-        <div style="background: #ffffff; border: 1px solid #e2e2ef; border-radius: 16px; padding: 26px 42px; box-shadow: 0 6px 18px rgba(40,40,90,0.06);">
-          <div style="font-size: 22px; font-weight: 800; color: #4f7cf0;">Odoo 19</div>
-          <div style="font-size: 13px; color: #6b6b85; margin-top: 4px;">discuss_forward_19</div>
-        </div>
-      </div>
-    </div>
+<!-- COMPATIBILITY -->
+<div class="dmf-section-tinted">
+  <div class="dmf-section" style="text-align:center;">
+    <div class="dmf-eyebrow">COMPATIBILITY</div>
+    <div class="dmf-h2" style="margin-bottom:28px;">Works with your Odoo version</div>
+    <span class="dmf-badge" style="font-size:16px; padding:14px 26px;">Odoo 18</span>
+    <span class="dmf-badge" style="font-size:16px; padding:14px 26px;">Odoo 19</span>
   </div>
+</div>
 
-  <!-- ================= SUPPORT ================= -->
-  <div style="max-width: 900px; margin: 0 auto; padding: 88px 24px; text-align: center;">
-    <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; color: #7a4fe0; margin-bottom: 12px;">SUPPORT</div>
-    <h2 style="font-size: 30px; font-weight: 800; color: #1c1c3a; margin: 0 0 32px 0; letter-spacing: -0.5px;">Need help?</h2>
-
-    <div style="display: inline-block; background: #ffffff; border: 1px solid #edeef7; border-radius: 18px; padding: 36px 48px; box-shadow: 0 10px 28px rgba(40,40,90,0.06); text-align: left;">
-      <table style="border-collapse: collapse;">
-        <tr>
-          <td style="padding: 8px 20px 8px 0; font-size: 14px; font-weight: 700; color: #6b6b85; white-space: nowrap;">Developer</td>
-          <td style="padding: 8px 0; font-size: 15px; font-weight: 600; color: #1c1c3a;">Erfan Meraati</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px 20px 8px 0; font-size: 14px; font-weight: 700; color: #6b6b85; white-space: nowrap;">Website</td>
-          <td style="padding: 8px 0; font-size: 15px; font-weight: 600;"><a href="https://meraati.net" style="color: #6c4bd6; text-decoration: none;">meraati.net</a></td>
-        </tr>
-      </table>
-    </div>
+<!-- SUPPORT -->
+<div class="dmf-section" style="text-align:center;">
+  <div class="dmf-eyebrow">SUPPORT</div>
+  <div class="dmf-h2" style="margin-bottom:24px;">Need help?</div>
+  <div class="dmf-card" style="display:inline-block; text-align:left;">
+    <p style="margin:0 0 8px 0;"><strong style="color:#1c1c3a;">Developer:</strong> Erfan Meraati</p>
+    <p style="margin:0;"><strong style="color:#1c1c3a;">Website:</strong> <a href="https://meraati.net" style="color:#6c4bd6; text-decoration:none;">meraati.net</a></p>
   </div>
+</div>
 
-  <!-- ================= FINAL CTA ================= -->
-  <div style="width: 100%; background: linear-gradient(135deg, #6c4bd6 0%, #4f7cf0 100%); padding: 72px 24px;">
-    <div style="max-width: 760px; margin: 0 auto; text-align: center;">
-      <h2 style="font-size: 30px; font-weight: 800; color: #ffffff; margin: 0 0 16px 0; letter-spacing: -0.5px;">
-        Make your Discuss workflow faster
-      </h2>
-      <p style="font-size: 16px; color: rgba(255,255,255,0.9); margin: 0 auto 8px auto; max-width: 560px;">
-        Give your team a simple, native way to forward important messages between conversations —
-        without breaking their workflow.
-      </p>
-    </div>
+<!-- FINAL CTA -->
+<div style="background: linear-gradient(135deg, #6c4bd6 0%, #4f7cf0 100%); padding: 48px 20px; text-align:center;">
+  <div style="max-width:640px; margin:0 auto;">
+    <h2 style="font-size:24px; font-weight:800; color:#ffffff; margin:0 0 12px 0;">Make your Discuss workflow faster</h2>
+    <p style="font-size:14.5px; color:rgba(255,255,255,0.9); margin:0;">
+      Give your team a simple, native way to forward important messages between conversations.
+    </p>
   </div>
+</div>
 
 </div>
