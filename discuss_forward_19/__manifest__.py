@@ -29,7 +29,7 @@
     'price': 29.99,
     'currency': 'EUR',
 
-    'support': 'YOUR_EMAIL',
+    'support': 'erfan@meraati.net',
 
     'installable': True,
     'application': False,
