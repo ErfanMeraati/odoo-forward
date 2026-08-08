@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+
+    <t t-name="mail.Message" t-inherit="mail.Message" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o-mail-Message-content')]" position="before">
+            <div t-if="message.isForwarded" class="o_mail_message_forwarded_label">
+                <i class="fa fa-share"/>
+                <span>Forwarded from</span>
+                <span class="o_mail_message_forwarded_author" t-esc="message.forward_source_author_name"/>
+            </div>
+        </xpath>
+    </t>
+
+</templates>
