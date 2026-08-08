@@ -1,4 +1,3 @@
-```python
 # -*- coding: utf-8 -*-
 
 {
@@ -35,4 +34,4 @@
     'application': False,
     'auto_install': False,
 }
-```
+
