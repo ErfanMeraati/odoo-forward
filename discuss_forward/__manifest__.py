@@ -26,7 +26,7 @@
         ],
     },
 
-    'price': 29.99,
+    'price': 49.99,
     'currency': 'EUR',
 
     'support': 'erfan@meraati.net',
