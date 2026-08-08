@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="discuss_forward_19.ForwardMessageDialog">
+        <Dialog title="'Forward Message'" size="'md'" contentClass="'o_forward_dialog'">
+            <div class="o_forward_dialog_body">
+
+                <div class="o_forward_preview p-2 mb-3 rounded">
+                    <div class="text-muted small mb-1">
+                        <i class="fa fa-share me-1"/> Forwarding:
+                    </div>
+                    <div class="o_forward_preview_content"
+                         t-att-title="props.message.body">
+                        <t t-esc="props.message.body"/>
+                    </div>
+                </div>
+
+                <div class="o_forward_search mb-2">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Search user or channel..."
+                           t-att-value="state.searchTerm"
+                           t-on-input="onSearchInput"/>
+                </div>
+
+                <div class="o_forward_target_list">
+                    <t t-if="state.isLoading">
+                        <div class="text-center text-muted py-3">
+                            <i class="fa fa-spinner fa-spin me-1"/> Loading...
+                        </div>
+                    </t>
+                    <t t-elif="!state.targets.length">
+                        <div class="text-center text-muted py-3">
+                            No results found.
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="state.targets" t-as="target" t-key="target.id">
+                            <div class="o_forward_target_item d-flex align-items-center p-2 rounded"
+                                 t-att-class="isSelected(target.id) ? 'o_forward_target_selected' : ''"
+                                 t-on-click="() => this.toggleTarget(target.id)">
+
+                                <div class="o_forward_target_avatar me-2">
+                                    <i t-if="target.channel_type === 'chat'" class="fa fa-user-circle fa-lg"/>
+                                    <i t-elif="target.channel_type === 'group'" class="fa fa-users fa-lg"/>
+                                    <i t-else="" class="fa fa-hashtag fa-lg"/>
+                                </div>
+
+                                <div class="o_forward_target_name flex-grow-1">
+                                    <t t-esc="target.name"/>
+                                </div>
+
+                                <div class="o_forward_target_check">
+                                    <i t-if="isSelected(target.id)" class="fa fa-check-circle text-primary"/>
+                                    <i t-else="" class="fa fa-circle-o text-muted"/>
+                                </div>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+            </div>
+
+            <t t-set-slot="footer">
+                <span class="o_forward_selected_label text-muted me-auto">
+                    <t t-esc="selectedCountLabel"/>
+                </span>
+                <button class="btn btn-secondary" t-on-click="onCancelClick">Cancel</button>
+                <button class="btn btn-primary"
+                        t-att-disabled="!canSend"
+                        t-on-click="onSendClick">
+                    <t t-if="state.isSending">
+                        <i class="fa fa-spinner fa-spin me-1"/> Sending...
+                    </t>
+                    <t t-else="">
+                        <i class="fa fa-paper-plane me-1"/> Send
+                    </t>
+                </button>
+            </t>
+        </Dialog>
+    </t>
+
+</templates>
