@@ -19,9 +19,9 @@
 
     'assets': {
         'web.assets_backend': [
-            'discuss_forward_19/static/src/js/**/*.js',
-            'discuss_forward_19/static/src/xml/**/*.xml',
-            'discuss_forward_19/static/src/scss/**/*.scss',
+            'discuss_forward/static/src/js/**/*.js',
+            'discuss_forward/static/src/xml/**/*.xml',
+            'discuss_forward/static/src/scss/**/*.scss',
         ],
     },
 
